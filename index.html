@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi link href</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial,helvetica,sans-serif;
+        }
+
+        body{
+            background-color: #f4f4f4;
+        }
+
+        /*Navbar*/
+        nav{
+            background-color: #0077cc;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav a{
+            color:#f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        /*header*/
+        .header{
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .header h1{
+            color:#0077cc;
+            margin-bottom: 10px;
+        }
+
+        /*container gambar*/
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .card{
+            background-color: #f4f4f4;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            font-size: 15px;
+            text-align: center;
+            
+        } 
+        
+        .card-content p{
+            font-size: 14px;
+            color: #555;
+
+        }
+
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: #0077cc;
+            color: #f4f4f4;
+            margin-top: 20px;
+        }
+    </style>
+</head> 
+
+<body>
+
+    <!--menu navigasi-->
+    <nav>
+        <a href="#">home</a>
+        <a href="#">materi</a>
+        <a href="#">galeri</a>
+        <a href="#">kontak</a>
+    </nav>
+
+    <!--header-->
+    <div class="header">
+        <h1>materi HTML link href</h1>
+        <p>belajar membuat menu navigasi dan menampilkan gambar menggunakan html dan css</p>
+    </div>
+
+    <!--gambar-->
+    <div class="container">
+
+        <div class="card">
+            <img src="png.1.jpg" alt="gambar 1">
+        <div class="card-content">
+            <h3>belajar html</h3>
+            <p>html digunakan untuk membuat struktur dasar halaman website</p>
+    </div>
+    </div>
+
+    <div class="card">
+        <img src="png.2.jpg" alt="gambar 2">
+        <div class="card-content">
+            <h3>belajar css</h3>
+            <p>css digunakan untuk mempercantik tampilan website agar lebih menarik.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="png.3.jpg" alt="gambar 3">
+        <div class="card-content">
+            <h3>belajar link</h3>
+            <p>tag href digunakan untuk membuat tautan atau pindahan halaman</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <p>© 2026 Pembelajaran HTML & CSS</p>
+    </footer>
+
+    
+</body>
+</html>
